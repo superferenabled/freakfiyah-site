@@ -1,0 +1,47 @@
+.Navigation {
+    font-family: 'OpenSansPX';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 44px;
+    list-style-type: none;
+    margin: 0;
+
+    /*background-color: ;*/
+    background-image: linear-gradient(to right, #2c3e50, #16a085);
+
+
+
+    li {
+        margin: auto 24px;
+    }
+    
+    @keyframes boing {
+        15%, 40%, 75%, 100% {
+            transform-origin: center center;
+        }
+        15% {
+            transform: scale(1.2, 1.1);
+        }
+        40% {
+            transform: scale(0.95, 0.95);
+        }
+        75% {
+            transform: scale(1.05, 1);
+        }
+        100% {
+            transform: scale(1, 1);
+        }
+    }
+
+    li a {
+        color: white;
+        text-decoration: none;
+        &:hover, &:focus {
+            animation: boing 300ms ease-in-out;
+        }
+    }
+
+}
