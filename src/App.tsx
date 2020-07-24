@@ -11,10 +11,12 @@ import Games from './sections/Games/Games';
 import Blog from './sections/Blog/Blog';
 import Contact from './sections/Contact/Contact';
 import Navigation from './components/navigation/Navigation';
+import HeroHeader from './components/header/HeroHeader';
 
 function App() {
   return (
     <Router>
+      <HeroHeader></HeroHeader>
       <div>
         <Navigation></Navigation>
         <Switch>

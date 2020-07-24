@@ -1,0 +1,21 @@
+.HeroHeader {
+    height: 300px;
+    background-color: #0c060f;
+    overflow: hidden;
+
+    .bg1 {
+        height: 300px;
+        background: url(./herobg1.png) 0 0 no-repeat;
+        background-position-x: center;
+        background-position-y: 58%;
+        background-size: 1250px;
+        transition: all .2s  cubic-bezier(0.68, -0.55, 0.265, 1.55); /*cubic-bezier(0.6, -0.28, 0.735, 0.045);*/
+        z-index: -10;
+
+        &:hover {
+            /*animation: magnify 300ms ease-in;*/
+            background-size: 1300px;
+            /*transform: rotate(2deg);*/
+        }
+    }
+}
