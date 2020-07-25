@@ -1,7 +1,16 @@
 .HeroHeader {
     height: 300px;
-    background-color: #0c060f;
+    background-color: #010b09;
     overflow: hidden;
+
+    .Title {
+        position: absolute;
+        right: 23%;
+        top: 10%;
+        color: #fff;
+        font-size: 110px;
+        font-family: 'OpenSansPX';
+    }
 
     .bg1 {
         height: 300px;

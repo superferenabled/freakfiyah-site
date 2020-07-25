@@ -12,6 +12,7 @@ import Blog from './sections/Blog/Blog';
 import Contact from './sections/Contact/Contact';
 import Navigation from './components/navigation/Navigation';
 import HeroHeader from './components/header/HeroHeader';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           </Route>
         </Switch>
       </div>
+      <Footer></Footer>
     </Router>
   );
 }
