@@ -8,17 +8,17 @@ const Games: React.FC = (props: any) => {
         {
             title: 'Curse of the Dark Tower',
             text: 'bla blah',
-            image: ''
+            image: 'image.jpg'
         },
         {
             title: 'Curse of the Dark Tower',
             text: 'bla blah',
-            image: ''
+            image: 'image.jpg'
         },
         {
             title: 'Curse of the Dark Tower',
             text: 'bla blah',
-            image: ''
+            image: 'image.jpg'
         }
     ]);
 
