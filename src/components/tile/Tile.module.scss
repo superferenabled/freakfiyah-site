@@ -1,28 +1,48 @@
 .Tile {
-    width: 560px;
-    height: 300px;
-    border: 1px solid rgb(59, 69, 78);
-    margin-bottom: 40px;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 0 30px 0 rgba(0,0,0,.34);
+  width: 560px;
+  height: 250px;
+  overflow: hidden;
+  border: 1px solid rgb(59, 69, 78);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.34);
+  }
+
+  span {
+    /*border: 1px solid red;*/
+  }
+
+  .Image {
+    max-width: 40%;
+    min-width: 40%;
+    border-radius: 6px 0 0 6px;
+    background-color: rgb(59, 69, 78);
+  }
+
+  .Info {
+    max-width: 52%;
+    min-width: 52%;
     display: flex;
-    flex-direction: row;
-
-    span{
-        border: 1px solid red;
+    flex-direction: column;
+    padding: 4%;
+    .Title {
+        font-weight: bold;
     }
-
-    .Image {
-
+    .Text {
+        margin-top: 8px;
+        max-height: 190px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /*border: 1px solid red;*/
+        font-size: 20px;
+        text-align: justify;
     }
-
-    .Info {
-        .Tile {
-
-        }
-        .Text {
-
-        }
-    }
+  }
 }
