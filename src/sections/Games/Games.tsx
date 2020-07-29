@@ -34,6 +34,13 @@ const Games: React.FC = (props: any) => {
         }
     ]);
 
+    let tiles: any[] = [];
+    if(match.isExact) {
+        tiles = games.map(game => {
+            return <Tile {...game} url={`${match.path}/${game.id}`}></Tile>
+        });
+    }
+
     return (
         <div className={classes.Section}>
         <Switch>
@@ -46,10 +53,7 @@ const Games: React.FC = (props: any) => {
                 );
             })}
         </Switch>
-
-        {games.map(game => {
-            return <Tile {...game} url={`${match.path}/${game.id}`}></Tile>
-        })}
+        {tiles}
         </div>
     );
 };

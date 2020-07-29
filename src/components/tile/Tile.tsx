@@ -15,7 +15,7 @@ type Game = {
 
 const Tile: React.FC<Game> = (props) => {
     return (
-        <Link className={classes.TileLink} to={props.url}>
+        <Link className={classes.TileLink} to={props.url} id={props.id}>
         <div className={classes.Tile}>
             <span className={classes.Image}><img src={`./${props.image}`} alt={props.image}></img></span>
             <span className={classes.Info}>
