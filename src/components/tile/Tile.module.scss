@@ -24,7 +24,6 @@
   span {
     /*border: 1px solid red;*/
   }
-
   .Image {
     max-width: 40%;
     min-width: 40%;
@@ -34,13 +33,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 
     img{
       max-height: 100%;
+      width: auto;;
       transition: all .2s  cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      &:hover {
+      /*&:hover {
         max-height: 110%;
-      }
+      }*/
     }
 
   }

@@ -16,21 +16,24 @@ const Games: React.FC = (props: any) => {
             id: 'bombear',
             text: 'blah blah bombear stuff.',
             shortDesc: 'We are very excited to announce that we will participate in the Indie Game Maker Contest 2015.',
-            image: 'bb.png'
+            image: 'bb.png',
+            bgColor: '#1f2139'
         },
         {
             title: 'Shape Escape',
             id: 'shapeescape',
             text: 'blah blah shape escape stuff.',
             shortDesc: 'We are very excited to announce that we will participate in the Indie Game Maker Contest 2015.',
-            image: 'shpesc.png'
+            image: 'shpesc2.png',
+            bgColor: '#bdd2c7'
         },
         {
             title: 'Curse of the Dark Tower',
             id: 'curseofthedarktower',
             text: 'blah blah curse of the dark tower stuff.',
             shortDesc: 'We are very excited to announce that we will participate in the Indie Game Maker Contest 2015.',
-            image: 'cotdt.png'
+            image: 'cotdt.png',
+            bgColor: '#181e1b'
         }
     ]);
 
